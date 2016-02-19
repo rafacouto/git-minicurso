@@ -1,0 +1,14 @@
+
+img + a {
+    display: inherit;
+    text-align: center;
+    font-size: 60% !important;
+    color: #ddd !important;
+}
+
+section > p > img {
+    margin-bottom: 0 !important;
+    max-height: 20ex !important;
+}
+
+
