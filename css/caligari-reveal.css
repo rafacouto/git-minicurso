@@ -6,7 +6,7 @@ img + a {
     color: #ddd !important;
 }
 
-section > p > img {
+section p img {
     margin-bottom: 0 !important;
     max-height: 20ex !important;
 }
