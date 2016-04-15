@@ -349,6 +349,8 @@ https://git-scm.com/book/es/v2
 - Por repositorio
 - Global ao usuario (--global)
 
+----
+
 ### Nome e email do usuario
 
 ```
@@ -381,32 +383,59 @@ git config --list
 
 				    <fragment data-markdown> 
 
-## Área de traballo e repositorio
+## Área de traballo
 
-- Área de traballo: onde fedellamos
-- Repositorio: baixo control
+- onde fedellamos cos ficheiros e directorios
+- partimos dun directorio __raíz de proxecto__
 
----
+----
 
-### Crear un repositorio
+## Repositorio
+
+- historia con todos os __cambios xestionados por git__
+- subdirectorio __.git__ na raíz do proxecto (non editar!)
+
+![Área de traballo e repositorio git](img/working_area.png)
+
+				    </fragment> 
+					</section>
+					<section>
+				    <fragment data-markdown> 
+
+## Crear un repositorio
 
 ```
 
-git init .
+git init [DIRECTORIO]
 _
 ```
 
-### Copiar (clonar) un repositorio
+![Creando un repositorio dende 0](img/git_init.png)
+
+  1. Crea un novo directorio no teu disco duro para un novo proxecto e
+  inicializa o repositorio Git.
+  2. Crea un ficheiro de texto _README.md_ co título do proxecto dentro.
+  3. Executa `git add README.md && git commit -m 'BigBang'`
+
+				    </fragment> 
+					</section>
+					<section>
+				    <fragment data-markdown> 
+
+## Copiar (clonar) un repositorio
 
 ```
 
-git clone URL_REPO
+git clone URL_REPO [DIRECTORIO]
 _
 ```
----
-```
-git clone https://github.com/rafacouto/git-minicurso.git
-```
+
+![Clonando un repositorio](img/git_clone.png)
+
+  1. Clona no teu disco duro o repositorio que está na URL
+  **https://github.com/rafacouto/git-minicurso.git**
+  2. Extra: volve a facer o mesmo pero agora que o directorio sexa **/tmp/slides** e
+  logo borra o subdirectorio **/tmp/slides/.git**
 
             </fragment>
 
