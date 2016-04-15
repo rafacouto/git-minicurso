@@ -31,5 +31,5 @@
 
 
 <!-- links -->
-[PRE01]: http://rafacouto.github.io/git-reveal/git-1.html
+[PRE01]: http://rafacouto.github.io/git-minicurso/git-1.html
 
