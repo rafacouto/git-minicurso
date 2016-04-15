@@ -458,11 +458,16 @@ _
 
 ```
 
-git log
+git log --oneline --tags
 _
 ```
 
----
+![Histórico de cambios](img/git_log.png)
+
+				    </fragment> 
+					</section>
+					<section>
+				    <fragment data-markdown> 
 
 ### Moverse entre versións
 
@@ -471,6 +476,15 @@ _
 git checkout
 _
 ```
+
+![Cambiado de versión con checkout](img/git_checkout.png)
+[Photo: RyPress.com](http://rypress.com/tutorials/git/tips-and-tricks)
+
+----
+  1. Clonar o repositorio de firmware do Escornabot
+  https://github.com/escornabot/arduino.git
+  2. Ir a versión marcada como _v1.1-placidus_
+
             </fragment>
 
             <aside class="notes">
@@ -495,13 +509,45 @@ git status
 _
 ```
 
----
+![Estado do área de traballo](img/git_status.png)
+
+				    </fragment> 
+					</section>
+					<section>
+				    <fragment data-markdown> 
 
 ### Creación dun paquete de cambios
 
 ```
 
-git commit
+git commit -m 'MENSAXE DE CAMBIOS'
+_
+```
+
+![Operaciones locales](img/local_operations.png)
+[Photo: Juri Strumpflohner](http://juristr.com/blog/2013/04/git-explained/)
+
+				    </fragment> 
+					</section>
+					<section>
+				    <fragment data-markdown> 
+
+### Preparando o commit
+
+```
+
+git add FILES
+git rm FILES
+git mv SRC DST
+_
+```
+
+![File lifecycle](img/file_status_lifecycle.png)
+[Photo: oxkhar (slides)](http://slides.oxkhar.com/git/#/)
+
+```
+
+git diff
 _
 ```
             </fragment>
@@ -512,24 +558,6 @@ _
           </section>
         </section>
 
-				<!-- ****************************************************************** -->
-        
-				<section data-background="img/bg-03.jpg"> 
-
-					<section>
-
-				    <fragment data-markdown> 
-
-### Revisión de cambios
-
-```
-
-git diff
-_
-```
-
-          </section>
-        </section>
 
 				<!-- ****************************************************************** -->
         
