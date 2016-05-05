@@ -464,6 +464,52 @@ _
 
 ![Histórico de cambios](img/git_log.png)
 
+----
+
+- Filtros por data: --since=2016-03-12 --until=2016-03-31 
+- Outros filtros: --author=caligari --grep="regex"
+
+				    </fragment> 
+					</section>
+					<section>
+				    <fragment data-markdown> 
+
+### Etiquetas 
+
+- Etiqueta: __referencia a un commit__ concreto cun nome 'sinxelo'.
+
+![Etiqueta como referencia](img/tag.png)
+
+----
+
+```
+git tag 17de0f2c v1.1-placidus
+git tag
+git checkout v1.1-placidus
+git log --decorate
+_
+```
+
+				    </fragment> 
+					</section>
+					<section>
+				    <fragment data-markdown> 
+
+### Referencia HEAD
+
+- É unha referencia que sempre apunta ao último commit da póla (branch) actual.
+
+![Referencia HEAD](img/head_ref.png)
+[Photo: Nulab Inc. (Backlog)](https://backlogtool.com/git-guide/en/stepup/stepup1_3.html)
+
+----
+
+#### Referencias relativas a HEAD
+
+- HEAD^ (un commit antes da actual HEAD)
+- HEAD^^ (dous commit antes da actual HEAD)
+- HEAD~n ('n' commit antes da actual HEAD)
+
 				    </fragment> 
 					</section>
 					<section>
